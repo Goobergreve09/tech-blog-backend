@@ -3,23 +3,21 @@ header,
   border-bottom: 1px solid #ccc;
 }
 
+header {
+  background-color: #EDBB99;
+}
 .no-button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #C0392B;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: #C0392B;
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}
