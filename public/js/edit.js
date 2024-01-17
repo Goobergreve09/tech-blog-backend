@@ -1,17 +1,13 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    console.log("helolo");
     const id = event.target.getAttribute("data-id");
-    console.log("Event target:", event.target);
-  
     const name = document.querySelector("#post-name").value.trim();
     const description = document.querySelector("#post-desc").value.trim();
   
-    console.log(name);
-    console.log(description);
-  
     if (name && description) {
+        console.log(`/api/posts/${id}`);
+console.log(JSON.stringify({ name, description }));
       try {
         const response = await fetch(`/api/posts/${id}`, {
           method: "PUT",
@@ -22,6 +18,8 @@ const newFormHandler = async (event) => {
         });
   
         if (response.ok) {
+          const updatedPost = await response.json(); // Parse the response JSON
+          console.log("Updated Post:", updatedPost);
           document.location.replace("/profile");
         } else {
           alert(`Failed to update post ${name}`);
@@ -35,7 +33,7 @@ const newFormHandler = async (event) => {
     }
   };
   
-  console.log("hi");
   document.querySelector(".edit-post-form").addEventListener("submit", newFormHandler);
+  
   
   
