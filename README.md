@@ -1,97 +1,69 @@
-# Module 14 Mini-Post: Crowdfunding App
+# Tech-Blog-Backend-dev
 
-In this mini-post, you will work with a group to build a full-stack crowdfunding app using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## User Stories
+  
+## Description
 
-- As a user, I want to see a list of current posts seeking funding.
+This is a tech blog challenge for module 14 of EDX web development bootcamp through Michigan State University. I was to create a tech based blog that met a number of certain criteria including the following.
 
-- As a user, I want to be able to create an account.
+* A functional login, and signup form
+* The ability for the user that is signed in to create, edit, and delete a post
+* The ability for the user to add comments onto a post.
+* Each post and comment must have the user name and date of the posted content.
+* A functional UI interface with links
 
-- As a registered user, I want to post my own posts to ask for funding.
+  
+## Table of Contents
 
-### Acceptance Criteria
+1. [Description](#description)  
+2. [How to Use](#usage) 
+3. [Visit site](#deployment)
+4. [Licensing](#license)  
+5. [Testing](#tests)  
+6. [Contact Me](#questions)
 
-- It's done when the `/` homepage route renders a list of all posts from the database.
 
-- It's done when the `/post/:id` route renders an individual post's details based on the route parameter id.
+## Usage
 
-- It's done when the `/login` route renders a form to log in and a form to create a new account.
+For usage of this website, you will begin at the homepage which will show a list of recent posts. Following, if you'd like to be an active member of Tech-Blog - create an account via the login link at the top right corner of this page. Now you will have access to commenting, editing, and creating your own post!
 
-- It's done when an existing user can enter their credentials on the login page to create a session on the server.
+![bzdfbadf](https://github.com/Goobergreve09/read-me-generator/assets/143923830/710cf922-b5f2-4b27-9a17-a64cc49780a3)
 
-- It's done when a new user can create an account on the login page and then be immediately logged in with a session.
+## Deployment
 
-- It's done when the `/profile` route renders the logged-in user's posts and a form to create a new post.
+A link to the deployed site via heroku can be found here --> [Click me]()
 
-- It's done when only a logged in user can visit the `/profile` route.
+## Contributions
 
-- It's done when a logged in user is redirected to `/profile` when they try to visit `/login` again.
+[EDX MSU Bootcamp module 14 mini-project ](https://bootcamp.msu.edu/coding/)
 
-- It's done when a user on the profile page can use the form to create a new post in the database.
+[ReadME Generator](https://github.com/Goobergreve09/read-me-generator)
 
-- It's done when a user on the profile page can select a "Delete" button to remove their post from the database.
+[Sequelize Docs](https://sequelize.org/docs/v6/getting-started/)
 
-- It's done when a logged-in user can select a "Logout" button to remove their session.
+[EDX tutors via calendly](https://www.edx.org/?msclkid=efce9599a1d41a4e781bf03e6a106d08&utm_source=bing&utm_medium=cpc&utm_campaign=YBN%7CEDX%7CGeneral%7CPortfolio%7CSEM%7CBRD%7CUS&utm_term=edx%20programs&utm_content=YBN%7CEDX%7CGeneral%7CPortfolio%7CSEM%7CBRD%7CUS%7CProgram)
 
-- It's done when the session for a logged-in user expires after a set time.
 
-- It's done when the API routes to create and delete posts are protected from non logged-in users.
 
-- It's done when the code is organized using MVC architecture.
+## License
 
-- It's done when the views are rendered with Handlebars.js templates.
+The software license selected for this application *is as follows*:
 
-## Specifications
+**Massachusetts Institute of Technology License**
 
-- The database models have the following fields and associations:
+[MIT](https://opensource.org/licenses/MIT)
 
-  - `User`
 
-    - `id`: primary key
 
-    - `name`
+## Tests
 
-    - `email`
+no
 
-    - `password`
+## Questions
 
-  - `Post`
+If you have any additional questions you can contact me by using the following:
 
-    - `id`: primary key
+ Github Profile: [Goobergreve09](https://www.github.com/Goobergreve09)
 
-    - `name`
-
-    - `description`
-
-    - `date_created`
-
-    - `needed_funding`
-
-    - `user_id`: foreign key that references `User.id`
-
-  - Users have many posts, and posts belong to a user.
-
-    - If a user is deleted, all associated posts are also deleted.
-
----
-
-## 💡 Hints
-
-- What tools can you use to test the existing API routes if you don't yet have a front end?
-
-- Where would you place the client-side JavaScript for capturing form data?
-
-- How can middleware help protect routes from non logged-in users?
-
-- How can Handlebars.js helpers (both built-in and custom) be used to render the desired results?
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
-
-- Add an `/edit/:id` route for logged in users to update their posts' details. Then deploy the app to Heroku!
-
----
-
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+ Email Address: gregory.greve@yahoo.com
