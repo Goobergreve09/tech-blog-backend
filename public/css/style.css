@@ -10,6 +10,8 @@ header {
 
 
 }
+
+
 .no-button {
   background: none;
   border: none;
@@ -25,6 +27,11 @@ header {
   text-decoration: underline;
 }
 
-header.display-flex.justify-space-between.align-center.p-2 {
-  color: white;
+.display-flex.justify-space-between.align-center.p-2 {
+  color: white !important;
 }
+
+.red {
+  color:white;
+}
+

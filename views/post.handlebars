@@ -1,4 +1,4 @@
-<div class="text-center">
+<div class="text-center red">
   <h2>{{name}}</h2>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
@@ -9,7 +9,7 @@
   </p>
 </div>
 
-  <div class="col-md-6">
+  <div class="col-md-6 red">
     <h3>Leave a Comment:</h3>
 
     <form class="form edit-post-form" data-id="{{id}}">
@@ -24,7 +24,7 @@
   </div>
 
 {{#if comments.length}}
-  <div class="col-md-6 comment-list">
+  <div class="col-md-6 comment-list red">
     <h3>Comments for {{name}}:</h3>
 
     {{#each comments as |comment|}}

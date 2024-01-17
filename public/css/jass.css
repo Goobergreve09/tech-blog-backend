@@ -423,12 +423,13 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  color: whitesmoke;
   text-decoration: none;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 a:hover {
-  color: #065b83;
+  color: #3498DB;
   text-decoration: underline;
 }
 
