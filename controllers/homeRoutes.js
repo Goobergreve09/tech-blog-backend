@@ -34,16 +34,20 @@ router.get("/post/:id", async (req, res) => {
           model: User,
           attributes: ["name"],
         },
-        Comment,
+        {
+          model: Comment,
+          include: [{ model: User, as: "user", attributes: ["name"] }],
+        },
       ],
     });
 
     const post = postData.get({ plain: true });
-    console.log(post);
+    console.log("Comment object:", post.comments);
 
     res.render("post", {
       ...post,
       logged_in: req.session.logged_in,
+
     });
   } catch (err) {
     res.status(500).json(err);
@@ -101,5 +105,7 @@ router.get("/login", (req, res) => {
 
   res.render("login");
 });
+
+
 
 module.exports = router;

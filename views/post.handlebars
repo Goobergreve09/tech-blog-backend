@@ -23,27 +23,38 @@
     </form>
   </div>
 
-{{#each comments as |comment|}}
-  <div class="row mb-4 post">
-    <div class="col-md-5">
-      <h4>
-        User # {{comment.user_id}}
-      </h4>
-      <p>{{format_date comment.date_created}}</p>
-    </div>
-    <div class="col-md-7">
-      <p>
-        {{comment.text}}
-      </p>
-    </div>
-      <div class="col-md-4">
-            <button
-              class="btn btn-sm btn-danger"
-              data-id="{{comment.id}}"
-            >DELETE COMMENT</button>
-          </div>
+{{#if comments.length}}
+  <div class="col-md-6 comment-list">
+    <h3>Comments for {{name}}:</h3>
+
+    {{#each comments as |comment|}}
+      <div class="row mb-4 post">
+        <div class="col-md-5">
+          <h4>
+             {{#if comment.user}}
+              User: {{comment.user.name}}
+            {{else}}
+              User: Unknown
+            {{/if}}
+          </h4>
+          <p>{{format_date comment.date_created}}</p>
+        </div>
+        <div class="col-md-7">
+          <p>
+            {{comment.text}}
+          </p>
+        </div>
+        {{!-- <div class="col-md-4">
+          <button
+            class="btn btn-sm btn-danger"
+            data-id="{{comment.id}}"
+          >DELETE COMMENT</button>
+        </div> --}}
+      </div>
+   
+    {{/each}}
   </div>
-{{/each}}
+{{/if}}
 
 
 
