@@ -35,3 +35,7 @@ header {
   color:white;
 }
 
+.form.login-form , .form.signup-form{
+  color:whitesmoke;
+}
+
