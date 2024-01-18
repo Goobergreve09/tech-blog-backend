@@ -20,8 +20,7 @@ This is a tech blog challenge for module 14 of EDX web development bootcamp thro
 2. [How to Use](#usage) 
 3. [Visit site](#deployment)
 4. [Licensing](#license)  
-5. [Testing](#tests)  
-6. [Contact Me](#questions)
+5. [Contact Me](#questions)
 
 
 ## Usage
@@ -32,7 +31,7 @@ For usage of this website, you will begin at the homepage which will show a list
 
 ## Deployment
 
-A link to the deployed site via heroku can be found here --> [Click me]()
+A link to the deployed site via heroku can be found here --> [Click me](https://techblogbackend-9bd2896f57e1.herokuapp.com/)
 
 ## Contributions
 
@@ -55,10 +54,6 @@ The software license selected for this application *is as follows*:
 [MIT](https://opensource.org/licenses/MIT)
 
 
-
-## Tests
-
-no
 
 ## Questions
 
